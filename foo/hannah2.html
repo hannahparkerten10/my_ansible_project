@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hannah Parker's Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+        header {
+            background-color: #0073e6;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+        nav ul li {
+            float: left;
+        }
+        nav ul li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        nav ul li a:hover {
+            background-color: #111;
+        }
+        main {
+            padding: 1rem;
+            text-align: center; /* Center the content */
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        .content {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 2rem;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .button {
+            background-color: #0073e6;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+        /* Center the image */
+        .centered-image {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 300px; /* Set the height of the container */
+        }
+        .centered-image img {
+            max-width: 100%;
+            max-height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Hannah Parker's Page!</h1>
+    </header>
+
+    <main>
+        <div class="content">
+            <h2>About Hannah</h2>
+            <p>Hello! My name is Hannah Parker, and this is my personal page on our Raspberry Pi Wispa server.</p>
+            <div class="centered-image">
+                <img src="hannahskydiving.JPG" alt="Hannah Skydiving">
+            </div>
+            <button class="button" onclick="showAlert()">Click Me!</button>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Hannah Parker</p>
+    </footer>
+    <script>
+        function showAlert() {
+            alert('Hello, this is a JavaScript alert!');
+        }
+    </script>
+</body>
+</html>

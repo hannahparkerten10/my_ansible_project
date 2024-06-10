@@ -1,0 +1,25 @@
+---
+- name: Configure Apache on AWS EC2 instance
+  hosts: webservers
+  become: yes
+
+  tasks:
+    - name: Ensure Apache2 is installed
+      apt:
+        name: apache2
+        state: present
+
+    - name: Ensure Apache2 service is running and enabled
+      service:
+        name: apache2
+        state: started
+        enabled: yes
+
+    - name: Upload HTML file to web server
+      copy:
+        src: foo/
+        dest: /var/www/html/
+        owner: www-data
+        group: www-data
+        mode: '0755'
+        directory_mode: '0755'

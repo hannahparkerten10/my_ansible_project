@@ -1,0 +1,7 @@
+#!/bin/bash
+
+cd /etc/
+echo "There are...." 
+ls | wc -l
+echo "... files in /etc"
+
